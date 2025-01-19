@@ -1,0 +1,22 @@
+.logo1 {
+  width: 10%;
+}
+
+.logo2 {
+  width: 15%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.wrapper.logo_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrapper.logo_wrapper .logo2 {
+  width: 10%;
+}
