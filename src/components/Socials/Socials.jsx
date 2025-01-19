@@ -1,5 +1,5 @@
 import css from './Socials.module.css';
-import { RiFacebookFill } from 'react-icons/ri';
+import { RiWhatsappFill } from 'react-icons/ri';
 import { RiInstagramFill } from 'react-icons/ri';
 
 export default function Socials() {
@@ -7,12 +7,12 @@ export default function Socials() {
     <div className={css.wrapper}>
       <a
         className={css.socials}
-        href="https://www.facebook.com/profile.php?id=100063342902294"
+        href="https://wa.me/390699784994"
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="facebook"
+        aria-label="whatsapp"
       >
-        <RiFacebookFill />
+        <RiWhatsappFill />
       </a>
       <a
         className={css.socials}
