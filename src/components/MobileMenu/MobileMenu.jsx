@@ -1,3 +1,4 @@
+import Address from '../Address/Address';
 import CloseMenu from '../CloseMenu/CloseMenu';
 import Socials from '../Socials/Socials';
 import css from './MobileMenu.module.css';
@@ -27,6 +28,7 @@ export default function MobileMenu({ toggleMenu }) {
         </ul>
       </nav>
       <Socials />
+      <Address />
     </div>
   );
 }
