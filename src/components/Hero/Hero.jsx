@@ -5,7 +5,7 @@ export default function Hero() {
     <div className={css.hero_wrapper}>
       <h1>Frase carina titolo della pagina</h1>
       <p>sottotitolo</p>
-      <Button btn btnText="Prenota" type="button" />
+      <Button link btnText="Prenota" href={'/index.html'} />
     </div>
   );
 }
