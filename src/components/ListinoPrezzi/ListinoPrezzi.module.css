@@ -1,0 +1,18 @@
+.price_container {
+  display: flex;
+  gap: 30px;
+}
+
+.name {
+  min-width: 155px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+}
+
+.price {
+  width: 70px;
+  padding: 5px;
+  text-align: center;
+}
