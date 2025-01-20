@@ -11,10 +11,11 @@ html {
 body {
   color: #0c0c0c;
   background: #fbfbfb;
-  min-width: 320px;
+  /* min-width: 320px; */
   max-width: 1440px;
+  min-height: 100vh;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
 }
 
 h1,

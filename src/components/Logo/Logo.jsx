@@ -1,13 +1,10 @@
 import css from './Logo.module.css';
-import logo1 from '../../images/logo1.png';
-import logo2 from '../../images/logo2.png';
-import clsx from 'clsx';
+import Icon from '../Icon/Icon';
 
-export default function Logo({ logoVariant }) {
+export default function Logo({ width, height, xlinkHref }) {
   return (
-    <a href="/index.html" className={clsx(css.wrapper, css[logoVariant])}>
-      <img className={css.logo1} src={logo1} alt="logo" width="206"></img>
-      <img className={css.logo2} src={logo2} alt="logo" width="206"></img>
+    <a href="/index.html" className={css.logo_container}>
+      <Icon width={width} height={height} xlinkHref={xlinkHref} />
     </a>
   );
 }

@@ -4,7 +4,7 @@ import { RiInstagramFill } from 'react-icons/ri';
 
 export default function Socials() {
   return (
-    <div className={css.wrapper}>
+    <div className={css.socials_container}>
       <a
         className={css.socials}
         href="https://wa.me/390699784994"

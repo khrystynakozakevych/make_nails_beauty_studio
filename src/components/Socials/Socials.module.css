@@ -1,3 +1,8 @@
+.socials_container {
+  display: flex;
+  gap: 5px;
+}
+
 .socials {
   outline: none;
   border: 1 solid #000;
