@@ -6,7 +6,7 @@ import clsx from 'clsx';
 
 export default function MobileMenu({ toggleMenu }) {
   return (
-    <div className={clsx(css.menu, css.open)}>
+    <div className={clsx(css.menu_container, css.open)}>
       <CloseMenu toggleMenu={toggleMenu} />
       <nav>
         <ul>
