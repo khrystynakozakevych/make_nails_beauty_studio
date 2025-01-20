@@ -3,9 +3,9 @@ import Logo from '../Logo/Logo';
 import css from './Header.module.css';
 import clsx from 'clsx';
 
-export default function Header({ toggleMenu }) {
+export default function Header({ toggleMenu, homeContainer }) {
   return (
-    <header className={clsx(css.header_container, css.container)}>
+    <header className={clsx(css.header_container, css[homeContainer])}>
       <Logo
         width={87}
         height={24}

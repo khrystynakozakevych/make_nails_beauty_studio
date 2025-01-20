@@ -46,7 +46,10 @@ export default function App() {
     <>
       {/* <Header toggleMenu={toggleMenu} /> */}
       {/* {isMenuOpen && <MobileMenu toggleMenu={toggleMenu} />} */}
-      <Header toggleMenu={() => toggleSection('Menu')} />
+      <Header
+        homeContainer={'home_container'}
+        toggleMenu={() => toggleSection('Menu')}
+      />
       {activeSection === 'Menu' && (
         <MobileMenu toggleMenu={() => toggleSection('Menu')} />
       )}
@@ -54,11 +57,20 @@ export default function App() {
         <Hero />
         <AboutUs />
         <Gallery />
-        {/* {activeSection === 'gallery' && (
-        <Gallery closeGallery={() => toggleSection('gallery')} />
-      )} */}
         <Services />
+        {/* {activeSection === 'Home' && (
+          <Home closeHome={() => toggleSection('Home')}>
+            <Hero />
+            <AboutUs />
+            <Gallery />
+            <Services />
+          </Home>
+        )} */}
+        {/* {activeSection === 'Gallery' && (
+          <Gallery closeGallery={() => toggleSection('Gallery')} />
+        )} */}
       </main>
+
       <Footer />
     </>
   );
