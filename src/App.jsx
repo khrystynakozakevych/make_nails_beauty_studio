@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <Router>
-      <div>
+      <>
         <Header toggleMenu={toggleMenu} />
         <MobileMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
         <main>
@@ -26,7 +26,7 @@ const App = () => {
           </Routes>
         </main>
         <Footer />
-      </div>
+      </>
     </Router>
   );
 };
