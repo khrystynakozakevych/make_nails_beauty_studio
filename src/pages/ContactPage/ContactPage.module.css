@@ -1,0 +1,28 @@
+.contacts_container {
+  padding: 15px 20px;
+}
+
+h2,
+p {
+  text-align: center;
+}
+
+.contacts_list {
+  background-color: blanchedalmond;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+}
+
+.contacts_list:last-child {
+  margin-bottom: 0;
+}
+.contacts_list ul li {
+  display: flex;
+}
+
+.day {
+  width: 75px;
+  text-align: left;
+  margin-right: 25px;
+}

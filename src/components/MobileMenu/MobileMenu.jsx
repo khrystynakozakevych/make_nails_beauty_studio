@@ -1,29 +1,35 @@
 import Address from '../Address/Address';
 import CloseMenu from '../CloseMenu/CloseMenu';
 import Socials from '../Socials/Socials';
+import { Link } from 'react-router-dom';
 import css from './MobileMenu.module.css';
 import clsx from 'clsx';
 
-export default function MobileMenu({ toggleMenu }) {
+export default function MobileMenu({ toggleMenu, isOpen }) {
   return (
-    <div className={clsx(css.menu_container, css.open)}>
+    <div className={clsx(css.menu_container, { [css.open]: isOpen })}>
       <CloseMenu toggleMenu={toggleMenu} />
       <nav>
         <ul>
           <li>
-            <a href="">Home</a>
+            <Link to="/" onClick={toggleMenu}>
+              Home
+            </Link>
           </li>
           <li>
-            <a href="">Chi siamo</a>
+            <Link to="/aboutUs" onClick={toggleMenu}>
+              Chi siamo
+            </Link>
           </li>
           <li>
-            <a href="">Listino prezzi</a>
+            <Link to="/pricing" onClick={toggleMenu}>
+              Listino prezzi
+            </Link>
           </li>
           <li>
-            <a href="">Servizi</a>
-          </li>
-          <li>
-            <a href="">Contatti</a>
+            <Link to="/contact" onClick={toggleMenu}>
+              Contatti
+            </Link>
           </li>
         </ul>
       </nav>

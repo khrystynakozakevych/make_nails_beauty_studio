@@ -57,3 +57,7 @@ picture {
   flex-shrink: 0;
   max-width: 100%;
 }
+
+address {
+  font-style: normal;
+}
