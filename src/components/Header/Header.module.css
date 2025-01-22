@@ -7,8 +7,14 @@
 }
 
 .home_container {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   width: 100%;
+}
+
+.header_container img,
+.header_container svg {
+  max-width: 100%; /* Assicura che il logo o SVG si adatti */
+  height: auto;
 }
